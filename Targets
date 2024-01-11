@@ -47,13 +47,7 @@ host = 10.140.1.1
 
 menu = New York 1345
 title = New York 1345
-host = 10.133.1.1
-
-+++ NewYork-590
-
-menu = New York 590
-title = New York 590
-host = 10.132.1.1
+host = 10.194.63.1
 
 +++ Cayman
 

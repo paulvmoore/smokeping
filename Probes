@@ -1,0 +1,11 @@
+*** Probes ***
+
++ FPing
+
+binary = /usr/bin/fping
+
++ DNS
+binary = /usr/bin/dig
+lookup = 8.8.8.8
+pings = 5
+step = 180

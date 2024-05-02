@@ -20,6 +20,24 @@ title = This host
 host = localhost
 #alerts = someloss
 
+#+ International_Circuits 
+#menu = International Circuits 
+#title = International Circuits 
+
+#++ UK_to_SIN10
+#menu = UK to SIN10
+#title = UK to SIN10
+
+#+++ UK_LON_to_SIN10
+#menu = Neutrality to SIN10
+#title = Neutrality to SIN10 - NSID001770
+#host = 10.176.1.14
+
+#+++ UK_LHR_to_SIN10
+#menu = COLT to SIN10
+#title = COLT to SIN10 - SIN/LON/LE-680945
+#host = 10.177.1.14
+
 + BranchOffices
 
 menu = Branches
@@ -34,7 +52,18 @@ title = Americas
 
 menu = Austin
 title = Austin
-host = 10.140.1.1
+
+++++ Austin-Cor1
+
+menu = Austin Core1
+title = astca020cor1
+host = 10.196.63.1
+
+++++ Austin-Cor2
+
+menu = Austin Core2
+title = astca020cor2     
+host = 10.196.63.2
 
 #+++ Chicago
 #
@@ -42,7 +71,8 @@ host = 10.140.1.1
 #title = Chicago
 #host = 
 #
- +++ NewYork-1345
+
++++ NewYork-1345
 
 menu = New York 1345
 title = New York 1345
@@ -57,6 +87,7 @@ host = 10.194.63.1
 menu = NYC 1345 Core2
 title = nyc1345aoa-20-cor2
 host = 10.194.63.2
+
 
 +++ Cayman
 
@@ -79,7 +110,18 @@ host = 10.145.1.1
 
 menu = Jersey
 title = Jersey
-host = 10.128.1.1
+
+++++ Jersey-6N-Acc1
+
+menu = Jersey 6N Acc1
+title = jeresp-6n-acc1
+host = 10.179.63.1
+
+++++ Jersey-6S-Acc1   
+
+menu = Jersey 6S Acc1   
+title = jeresp-6s-acc1    
+host = 10.179.63.2
 
 +++ London-82BS
 
@@ -102,7 +144,7 @@ title = Middle East
 
 menu = Abu Dhabi
 title = Abu Dhabi
-host = 10.176.63.1
+host = 10.178.63.1
 
 #+++ Dubai#
 #
@@ -169,6 +211,4 @@ title = Quad9
 menu = Quad9
 title = Quad9 9.9.9.9
 host = 9.9.9.9
-
-
 

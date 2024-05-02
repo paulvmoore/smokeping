@@ -1,0 +1,171 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of xxx Company. \
+         Here you will learn all about the latency of our network.
+
++ Local
+
+menu = Local
+title = Local Network
+#parents = owner:/Test/James location:/
+
+++ LocalMachine
+
+menu = Local Machine
+title = This host
+host = localhost
+#alerts = someloss
+
++ BranchOffices
+
+menu = Branches
+title = Branch Offices
+
+++ Americas
+
+menu = Americas
+title = Americas
+
++++ Austin
+
+menu = Austin
+title = Austin
+host = 10.140.1.1
+
+#+++ Chicago
+#
+#menu = Chicago
+#title = Chicago
+#host = 
+#
+ +++ NewYork-1345
+
+menu = New York 1345
+title = New York 1345
+
+++++ NewYork-1345-Cor1
+
+menu = NYC 1345 Core1
+title = nyc1345aoa-20-cor1
+host = 10.194.63.1
+
+++++ NewYork-1345-Cor2
+menu = NYC 1345 Core2
+title = nyc1345aoa-20-cor2
+host = 10.194.63.2
+
++++ Cayman
+
+menu = Cayman
+title = Cayman
+host = 10.195.0.233
+
+++ Europe
+
+menu = Europe
+title = Europe
+
++++ Geneva
+
+menu = Geneva
+title = Geneva
+host = 10.145.1.1
+
++++ Jersey
+
+menu = Jersey
+title = Jersey
+host = 10.128.1.1
+
++++ London-82BS
+
+menu = London-82BS
+title = London-82BS
+host = 10.139.1.101
+
+#+++ Paris
+#
+#menu = Paris
+#title = Paris
+#host = 
+
+++ MiddleEast
+
+menu = Middle East
+title = Middle East
+
++++ AbuDhabi
+
+menu = Abu Dhabi
+title = Abu Dhabi
+host = 10.176.63.1
+
+#+++ Dubai#
+#
+#menu = Dubai
+#title = Dubai
+#host = 10.176.63.1
+
+++ AsiaPacific
+
+menu = APAC
+title = Asia Pacific
+
++++ HongKong
+
+menu = Hong Kong
+title = Hong Kong
+host = 10.187.63.1
+
++++ Singapore
+
+menu = Singapore
+title = Singapore
+host = 10.138.255.1
+
++ DNS
+
+probe = DNS
+menu = DNS
+title = DNS
+
+++ Google
+menu = Google DNS
+title = Google DNS
+
++++ GoogleA
+menu = GoogleA
+title = Google 8.8.8.8
+host = google-public-dns-a.google.com
+
++++ GoogleB
+menu = GoogleB
+title = Google 8.8.4.4
+host = google-public-dns-b.google.com
+
+++ Cloudflare
+menu = Cloudflare
+title = Cloudflare DNS
+
++++ CloudflareA
+menu = CloudflareA
+title = Cloudflare 1.1.1.1
+host = 1.1.1.1
+
++++ CloudflareB
+menu = CloudflareB
+title = Cloudflare 1.0.0.1
+host = 1.0.0.1
+
+++ Quad9
+menu = Quad9
+title = Quad9
+
++++ Quad9
+menu = Quad9
+title = Quad9 9.9.9.9
+host = 9.9.9.9

@@ -3,9 +3,8 @@
 probe = FPing
 
 menu = Top
-title = Network Latency Grapher
-remark = Welcome to the SmokePing website of xxx Company. \
-         Here you will learn all about the latency of our network.
+title = Brevan Howard Network Latency Grapher
+remark = Latency from London LON3 Data Centre
 
 + Local
 
@@ -19,6 +18,71 @@ menu = Local Machine
 title = This host
 host = localhost
 #alerts = someloss
+
++ DataCentres
+
+menu = Data Centres
+title = Data Centres
+
+++ LON3
+menu = LON3
+title = DIGITAL REALTY LON3
+
++++ LON3SPINE1
+menu = LON3 SPINE1
+title = LON3-R51-B03-SPN-001
+host = 10.182.9.11
+
++++ LON3SPINE2
+menu = LON3 SPINE2
+title = LON3-R52-B03-SPN-001
+host = 10.182.9.12
+
+
+++ LHR1
+menu = LHR1
+title = CYXTERA LHR1
+
++++ LHR1SPINE1
+menu = LHR1 SPINE1
+title = LHR1-R17-DM-SPN-001
+host = 10.182.137.11
+
++++ LHR1SPINE2
+menu = LHR1 SPINE2
+title = LHR1-R20-DL-SPN-001
+host = 10.182.137.12
+
+
+++ NY2
+menu = NY2
+title = CORESITE NY2
+
++++ NY2SPINE1
+menu = NY2 SPINE1
+title = NY2-R01-103-SPN-001
+host = 10.198.9.11
+
++++ NY2SPINE2
+menu = NY2 SPINE2
+title = NY2-R02-203-SPN-001
+host = 10.198.9.12
+
+
+++ SIN10
+menu = SIN10
+title = DIGITAL REALTY SIN10
+
++++ SIN10SPINE1
+menu = SIN10 SPINE1
+title = SIN10-R01-003-SPN-001
+host = 10.190.9.11
+
++++ SIN10SPINE2
+menu = SIN10 SPINE2
+title = SIN10-R02-003-SPN-001
+host = 10.190.9.12
+
 
 #+ International_Circuits 
 #menu = International Circuits 
@@ -40,8 +104,9 @@ host = localhost
 
 + BranchOffices
 
-menu = Branches
+menu = Offices
 title = Branch Offices
+
 
 ++ Americas
 
@@ -56,13 +121,13 @@ title = Austin
 ++++ Austin-Cor1
 
 menu = Austin Core1
-title = astca020cor1
+title = astca-2-cor1
 host = 10.196.63.1
 
 ++++ Austin-Cor2
 
 menu = Austin Core2
-title = astca020cor2     
+title = astca-2-cor2     
 host = 10.196.63.2
 
 #+++ Chicago
@@ -169,6 +234,33 @@ menu = Singapore
 title = Singapore
 host = 10.138.255.1
 
+#+ Summary
+#menu = Branch Summary
+#title = Branch Summary
+#host = /BranchOffices/Americas/Austin/Austin-Cor1 /BranchOffices/Americas/Austin/Austin-Cor2
+#host = /BranchOffices/Americas/Austin/Austin-Cor1 /BranchOffices/Americas/NewYork-1345/NewYork-1345-Cor1 /BranchOffices/Americas/Cayman
+
++ SummaryAM
+menu = Americas Offices Summary
+title = LON3 to Americas Offices Latency
+host = /BranchOffices/Americas/Austin/Austin-Cor1 /BranchOffices/Americas/NewYork-1345/NewYork-1345-Cor1 /BranchOffices/Americas/Cayman
+
++ SummaryAP
+menu = AsiaPac Offices Summary
+title = LON3 to AsiaPac Offices Latency 
+host = /BranchOffices/AsiaPacific/HongKong /BranchOffices/AsiaPacific/Singapore
+
++ SummaryEU
+menu = Europe Offices Summary
+title = LON3 to Europe Offices Latency
+host = /BranchOffices/Europe/Geneva /BranchOffices/Europe/Jersey/Jersey-6N-Acc1 /BranchOffices/Europe/London-82BS
+
++ SummaryME
+menu = Middle East Office Summary
+title = LON3 to Middle East Offices Latency
+host = /BranchOffices/MiddleEast/AbuDhabi
+
+
 + DNS
 
 probe = DNS
@@ -211,4 +303,3 @@ title = Quad9
 menu = Quad9
 title = Quad9 9.9.9.9
 host = 9.9.9.9
-
